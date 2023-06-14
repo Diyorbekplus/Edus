@@ -1,0 +1,64 @@
+@import "../Variables.scss";
+.video_section {
+    margin-top: 3rem;
+    background: $primaryColor url("./videoBack.jpg");
+    background-blend-mode:multiply;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: 100% 100%;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    aside {
+        color: $light;
+    }
+    aside:nth-child(1) {
+        h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 2rem 0;
+        }
+
+        button {
+            background: none;
+            border: 2px solid $mainColor;
+            color: $mainColor;
+            border-radius: 5px;
+            padding: 0.5rem 2rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+    aside:nth-child(2) {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .play_pause {
+            background: $secondaryColor;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 2rem;
+            span {
+                color: $mainColor;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .video_section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+        aside:nth-child(1) {
+            h1 {
+                font-size: 2rem;
+                margin: 1.5rem 0;
+            }
+        }
+    }
+}

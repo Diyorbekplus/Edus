@@ -1,0 +1,52 @@
+@import "../Variables.scss";
+.best_education_center {
+height: 700px;
+background: url("./eduBackground.jpg");
+.inner {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10rem;
+    color: $light;
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    p {
+        font-weight: 500;
+    }
+
+    .buttons {
+        margin-top: 3rem;
+        button {
+            padding: 0.5rem 2rem;
+            border-radius:0.5rem;
+            border: 0;
+            background: $primaryColor;
+            font-size: 1.3rem;
+            margin: 0.5rem;
+        }
+        button:nth-child(2) {
+            background: $mainColor;
+            color: $light;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    .inner {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .inner {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+}
+}

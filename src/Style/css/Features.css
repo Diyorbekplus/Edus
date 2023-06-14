@@ -1,0 +1,93 @@
+.features {
+  background: #001c42;
+  position: relative;
+}
+.features .findYourCourse {
+  transform: translateY(-50%);
+  margin: auto;
+  padding: 1rem;
+  width: 90%;
+  background: #3558AE;
+  text-align: center;
+  border-radius: 2rem;
+  /*         @media screen and (max-width: 500px) {
+              header {
+                  font-size: 1.5rem;
+              }
+          } */
+}
+.features .findYourCourse header {
+  font-size: 3rem;
+  color: #fff;
+  padding: 2rem 0;
+}
+.features .findYourCourse main {
+  padding: 0rem 0 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.features .findYourCourse main input {
+  height: 3rem;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: none;
+  outline-style: none;
+  color: #fff;
+  margin-right: 2rem;
+  box-shadow: 0px solid #000;
+}
+.features .findYourCourse main input:focus {
+  box-shadow: 0px solid #000;
+  outline-style: 0px solid #000;
+}
+.features .findYourCourse main input::-moz-placeholder {
+  color: #fff;
+}
+.features .findYourCourse main input::placeholder {
+  color: #fff;
+}
+.features .findYourCourse main button {
+  height: 3rem;
+  border: 2px solid #111;
+  border-radius: 5px;
+  background: #001c42;
+  color: #fff;
+  outline: none;
+  width: 200px;
+}
+@media screen and (max-width: 992px) {
+  .features .findYourCourse header {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .features .findYourCourse header {
+    font-size: 2rem;
+  }
+  .features .findYourCourse main {
+    flex-direction: column;
+  }
+  .features .findYourCourse main input {
+    margin: 1rem 0;
+  }
+  .features .findYourCourse main button {
+    width: 100%;
+  }
+}
+.features .offer {
+  transform: translateY(-40%);
+  padding: 5rem 0;
+}
+.features .offer header {
+  text-align: center;
+}
+.features .offer header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+}
+.features .offer header p {
+  margin: 1rem 0;
+  color: #fff;
+}

@@ -1,0 +1,27 @@
+@import "../Variables.scss";
+.gallery {
+    main {
+        padding: 10%;
+        header {
+            display: flex;
+            justify-content: center;
+            background: $lightSky;
+            height: 100px;
+            align-items: center;
+            border-radius: 2rem;
+            max-width: 700px;
+            margin: auto;
+            div {
+                margin: 0 1rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        }
+        .list {
+            margin: 5rem 0;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(18rem, 1fr));
+            grid-gap: 2rem;
+        }
+    }
+}

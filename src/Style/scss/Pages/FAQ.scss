@@ -1,0 +1,21 @@
+@import "../Variables.scss";
+.faq {
+    main {
+        padding: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        aside {
+            .accordion {
+                .accordion-item {
+                    .accordion-header {
+                        button {
+                            color: $lightSky;
+                            background: $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

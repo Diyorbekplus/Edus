@@ -1,0 +1,29 @@
+@import "../Variables.scss";
+.shop {
+    main {
+        padding: 10%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(20rem, 1fr));
+        grid-gap: 2rem;
+
+        article {
+            img {
+                height: 300px;
+                padding: 1rem;
+            }
+            .card-body {
+                background: $primaryColor;
+                text-align: center;
+                .card-title {
+                    font-size: 1.7rem;
+                    font-weight: 600;
+                    color: $light;
+                }
+                .price {
+                    color: $mainColor;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+@import "./Variables.scss";
+footer {
+    background: $primaryColor;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    aside {
+        .title {
+            color: $light;
+            font-size: 2rem;
+            padding: 2rem 0;
+        }
+    }
+    aside:nth-child(1) {
+        .title {
+            display: flex;
+            align-items: center;
+            img {
+                width: 80px;
+                height: 70px;
+            }
+            span {
+                margin-left: 1rem;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+        }
+        .social {
+            padding: 2rem 0;
+            display: flex;
+            .social-item {
+                margin: 0 1rem;
+                background: $mainColor;
+                padding: 0.5rem 0.7rem;
+                font-size: 1.2rem;
+                color: $lightSky;
+                border-radius: 0.5rem;
+            }
+            .social-item {
+                margin-left: 0;
+                &:hover {
+                    color: $light;
+                }
+            }
+        }
+    }
+    aside:nth-child(2) {
+        .courses {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+            position: relative;
+        }
+    }
+    aside:nth-child(3) {
+        .input {
+            padding: 2rem 0;
+            input {
+                background: $light;
+                border:none;
+                padding: 0.5rem;
+                color: $dark;
+                outline: none;
+                border-radius: 5px;
+            }
+            input::placeholder {
+                color: $light;
+            }
+            button {
+                background: $mainColor;
+                border: none;
+                margin-left: 1rem;
+                padding: 0.3rem 1rem;
+                border-radius: 5px;
+                color: $lightSky;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
+}

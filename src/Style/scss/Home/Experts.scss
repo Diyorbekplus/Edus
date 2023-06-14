@@ -1,0 +1,166 @@
+@import "../Variables.scss";
+.experts {
+    .expert {
+        transform: translateY(-30%);
+        padding: 10%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        aside:nth-child(1) {
+            img {
+                width: 100%;
+                height: 700px;
+            }
+        }
+        aside:nth-child(2) {
+            padding: 2rem;
+            background: $primaryColor;
+            .pro {
+                margin: 3rem 0;
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    color: $light;
+                }
+            }
+        }
+    }
+    .oneline_education {
+        transform: translateY(-30%);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        aside:nth-child(1) {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform: translateX(10%);
+            h1 {
+                font-size: 2.5rem;
+                font-weight: 500;
+                color: $dark;
+            }
+            p {
+                margin: 3rem 0;
+            }
+            .advisors {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 2rem;
+                aside {
+                    display: flex;
+                    justify-content: space-between;
+                    .icon_box {
+                        align-self: center;
+                        background: $secondaryColor;
+                        width: 100px;
+                        height: 80px;
+                        border-radius: 50%;
+                        font-size: 2rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        span {
+                            color: $light;
+                        }
+                    }
+                    .data {
+                        padding-left: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        p {
+                            margin: 0.5rem 0;
+                        }
+                        p:nth-child(1) {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+
+            button {
+                margin: 3rem 0;
+                padding: 0.5rem 2rem;
+                border: 0;
+                border-radius: 1rem;
+                background: $mainColor;
+                color: $light;
+                font-weight: 500;
+                font-size: 1.2rem;
+            }
+        }
+        aside:nth-child(2) {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        .expert {
+            transform: translateY(-15%);
+            grid-template-columns: 1fr;
+        }
+        .oneline_education {
+            grid-template-columns: 1fr;
+            aside:nth-child(1) {
+                padding: 10%;
+                position: relative;
+                transform: translateX(0%);
+                h1 {
+                    font-size: 2.5rem;
+                }
+                .advisors {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    grid-gap: 1rem;
+                    aside {
+                        padding: 0;
+                        margin: 0;
+                        .data {
+                            display: flex;
+                            flex-direction: column;
+                            p {
+                                margin: 0.5rem 0;
+                            }
+                            p:nth-child(1) {
+                                color: $primaryColor;
+                            }
+                            p:nth-child(2) {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 500px) {
+                    .advisors {
+                    grid-template-columns: 1fr;
+                    }
+                }
+    
+                button {
+                    margin: 3rem 0;
+                    padding: 0.5rem 2rem;
+                    border: 0;
+                    border-radius: 1rem;
+                    background: $mainColor;
+                    color: $light;
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        aside:nth-child(2) {
+            img {
+                width: 100%;
+                max-width: 20rem;
+                height: 100%;
+            }
+        }
+    }
+}

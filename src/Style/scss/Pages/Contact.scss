@@ -1,0 +1,84 @@
+@import "../Variables.scss";
+.contact {
+    main {
+        form {
+            padding: 10%;
+            width: 80%;
+            margin: auto;
+            p {
+                padding: 3rem 0;
+            }
+
+            .input-group {
+                input {
+                    height: 4rem;
+                    outline-style: none;
+                    &:focus {
+                        outline-style: none;
+                    }
+    
+                }
+                textarea {
+                    height: 7rem;
+                }
+                span {
+                    color: $mainColor;
+                }
+            }
+
+            button {
+                background: $primaryColor;
+                padding: 0.5rem 2rem;
+                color: $light;
+                &:hover {
+                background: $secondaryColor;
+                color: $mainColor;
+                }
+            }
+        }
+        .connection {
+            background: $secondaryColor url("./contactsBack.jpg") ;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-blend-mode: multiply;
+            background-position:center top;
+            grid-template-columns: 1fr 1fr 1fr;
+            min-height: 400px;
+            align-items: center;
+            height: auto;
+            padding: 1rem;
+            display: grid;
+            text-align: center;
+            grid-gap: 1rem;
+            article {
+                color: $light;
+                .icon {
+                    font-size: 3rem;
+                    color: $mainColor;
+                }
+                .data {
+                    margin: 1rem 0;
+                    font-size: 1rem;
+                }
+            }
+
+        }
+        @media screen and (max-width: 650px) {
+            .connection {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .contact {
+        main {
+            form {
+                padding: 3rem 1rem;
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+}

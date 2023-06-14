@@ -1,0 +1,56 @@
+@import "../Variables.scss";
+.membership {
+    .plans {
+        padding: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        article {
+            color: $light;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .icon {
+                font-size: 4rem;
+                margin: 3rem 0;
+            }
+            .line {
+                margin: 2rem auto;
+                width: 80%;
+                height: 2px;
+                background: $mainColor;
+            }
+            button {
+                margin: 2rem auto;
+                padding: 1rem 2rem;
+                border: none;
+                background: $light;
+                border-radius: 5px;
+                font-weight: 500;
+            }
+        }
+        article:nth-child(1) {
+            background: red;
+        }
+        article:nth-child(2) {
+            background: rgb(12, 147, 21);
+        }
+        article:nth-child(3) {
+            background: rgb(9, 101, 150);
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .membership {
+        .plans { 
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media screen and (max-width: 560px) {
+    .membership {
+        .plans { 
+            grid-template-columns: 1fr;
+        }
+    }
+}

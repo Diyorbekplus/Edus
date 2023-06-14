@@ -1,0 +1,1 @@
+.shop main{padding:10%;display:grid;grid-template-columns:repeat(3, minmax(20rem, 1fr));grid-gap:2rem}.shop main article img{height:300px;padding:1rem}.shop main article .card-body{background:#2d53b4;text-align:center}.shop main article .card-body .card-title{font-size:1.7rem;font-weight:600;color:#fff}.shop main article .card-body .price{color:#b65f08;font-size:1.3rem}

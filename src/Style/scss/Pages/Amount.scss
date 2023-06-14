@@ -1,0 +1,115 @@
+@import "../Variables.scss";
+.amount {
+    padding: 10%;
+    header {
+        margin: auto;
+        background: $primaryColor;
+        transform: translateY(-100%);
+        display: grid;
+        grid-template-columns: repeat(4, minmax(10rem, 1fr));
+        padding: 1rem;
+        .statistic {
+            text-align: center;
+            .icon {
+                font-size: 3rem;
+                color: $mainColor;
+            }
+            .amount {
+                font-size: 3rem;
+                font-weight: 600;
+                color: $light;
+            }
+            .title {
+                color: $secondaryColor;
+            }
+
+        }
+
+    }
+    .advisors {
+        .header {
+            button {
+                background: $primaryColor;
+                border: none;
+                font-size: 1rem;
+                padding: 0.5rem 2rem;
+                color: $light;
+            }
+        }
+        .advisors_list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1rem;
+            .advisor {
+                img {
+                    height: 400px;
+                }
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .card-title {
+                    text-align: center;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+                .social {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 1rem;
+                    a {
+                        text-decoration: none;
+                        color: $mainColor;
+                        margin: 0 1rem;
+                        font-size: 1.2rem;
+                        &:hover {
+                            color: $lightSky;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 1000px){
+            .advisors_list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media screen and (max-width: 760px){
+            .advisors_list {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .amount {
+        padding: 5%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .amount {
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .amount {
+        header {
+            transform: translateY(-30%);
+            grid-template-columns: 1fr 1fr;
+            .statistic {
+                margin: 1rem;
+                .icon {
+                    font-size: 2rem;
+                }
+                .amount {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    line-height: 0.5rem;
+                }
+    
+            }
+        }
+    }
+}

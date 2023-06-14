@@ -1,0 +1,132 @@
+@import "../Variables.scss";
+.carousel {
+    z-index: -1;
+    .carousel-inner {
+        color: $mainColor;
+        .carousel-item {
+            height: 650px;
+            background: darken(#e3e0e0, 100);
+            img {
+                height: 800px;
+                min-height: 800px;
+            }
+            .carousel-caption {
+                position: absolute;
+                top: 0;
+                left: 0;
+                text-align: left;
+                padding: 10%;
+                color: $light;
+                h1 {
+                    font-size: 5rem;
+                    font-weight: 700;
+                    animation: title 1s ease 0s 1 normal forwards;
+                    opacity: 0;
+                }
+                @keyframes title {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(35px);
+                    }
+                
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                p {
+                    font-size: 1.5rem;
+                    margin: 1.5rem 0;
+                    animation: text 1s ease 0s 1 normal forwards;
+                    animation-delay: 0.5s;
+                    opacity: 0;
+                    color: $mainColor;
+                }
+                @keyframes text {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(35px);
+                    }
+                
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                .buttons {
+                    animation: buttons 1s ease 0s 1 normal forwards;
+                    animation-delay: 1s;
+                    opacity: 0;
+                    display: flex;
+                    button {
+                        margin: 0 1rem;
+                        background: none;
+                        border: none;
+                        border-radius: 0.5rem;
+                        padding: 0.5rem 1rem;
+                        font-size: 1.2rem;
+                    }
+                    button:nth-child(1) {
+                        margin-left: 0;
+                        background: $primaryColor;
+                        color: $light;
+                    }
+                    button:nth-child(2) {
+                        background: $light;
+                        color: $dark;
+                    }
+                }
+                @keyframes buttons {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(35px);
+                    }
+                
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            }
+            @media screen and (max-width: 992px) {
+                .carousel-caption {
+                    h1 {
+                        font-size: 3rem;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            @media screen and (max-width: 600px) {
+                .carousel-caption {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                    p {
+                        font-size: 1rem;
+                    }
+                    .buttons {
+                        margin: 0 0.5rem;
+                        width: 100%;
+                        button {
+                            font-weight: 200;
+                            font-size: 1rem;
+                            padding: 0.2rem 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 50px;
+        height: 50px;
+        background: $dark;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
