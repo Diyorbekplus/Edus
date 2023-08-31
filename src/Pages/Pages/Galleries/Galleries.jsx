@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../Style/css/Gallery.css"
+import "../../../Style/scss/Pages/Gallery.scss"
 import Header from '../../../Components/Header'
 import { galleries } from '../../../Components/data'
 import Footer from '../../../Components/Footer'

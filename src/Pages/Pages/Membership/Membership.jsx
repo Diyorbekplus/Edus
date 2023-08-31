@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../Style/scss/Pages/Membership.css"
+import "../../../Style/scss/Pages/Membership.scss"
 import { membershipPlans } from '../../../Components/data'
 import Header from '../../../Components/Header'
 import Footer from '../../../Components/Footer'

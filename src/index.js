@@ -4,11 +4,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import Blog from './Pages/Blog/Blog';
 import Courses from './Pages/Courses/Courses';
-import Docs from './Pages/Docs/Docs';
 import Home from './Pages/Home/Home';
 import Pages from './Pages/Pages/Pages';
 import Shop from './Pages/Shop/Shop';
-import "./Style/scss/Main.css";
+import "./Style/scss/Main.scss";
 import { Provider } from 'react-redux';
 import { store } from './Store/store';
 import About from './Pages/Pages/About/About';
@@ -40,7 +39,6 @@ root.render(
         <Route path='courses' element={<Courses/>}/>
         <Route path='shop' element={<Shop/>}/>
         <Route path='blog' element={<Blog/>}/>
-        <Route path='docs' element={<Docs/>}/>
       </Route>
     </Routes>
     </BrowserRouter>

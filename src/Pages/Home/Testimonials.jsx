@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "../../Style/scss/Home/Testimonial.css";
+import "../../Style/scss/Home/Testimonial.scss";
 import { HiArrowNarrowLeft,HiArrowNarrowRight } from "react-icons/hi";
 import { useSelector } from 'react-redux';
 const Testimonials = () => {

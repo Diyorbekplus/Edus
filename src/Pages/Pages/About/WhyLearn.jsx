@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "../../../Style/css/WhyLearn.css"
+import "../../../Style/scss//Pages/WhyLearn.scss"
 import img from "../../../Images/whyLearn.jpg"
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 

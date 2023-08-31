@@ -4,7 +4,7 @@ import Footer from "../../../Components/Footer"
 import { FiUser } from "react-icons/fi";
 import { GoMail } from "react-icons/go";
 import { GrEdit } from "react-icons/gr";
-import "../../../Style/scss/Pages/Contact.css"
+import "../../../Style/scss/Pages/Contact.scss"
 import { connection } from '../../../Components/data';
 const Contact = () => {
   return (

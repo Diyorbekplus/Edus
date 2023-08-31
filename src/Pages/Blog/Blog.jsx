@@ -1,5 +1,4 @@
-import React from 'react'
-import "../../Style/scss/Blog/Blog.css"
+import "../../Style/scss/Blog/Blog.scss"
 import Header from '../../Components/Header'
 import Footer from '../../Components/Footer';
 import { newCategories, news, recentPosts } from '../../Components/data'

@@ -1,5 +1,4 @@
-import React from 'react'
-import "../../Style/scss/Home/Statistics.css"
+import "../../Style/scss/Home/Statistics.scss"
 import { MdGroups } from "react-icons/md";
 import { FaLaptopCode } from "react-icons/fa";
 import { GrAchievement } from "react-icons/gr";

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from "../Images/logo.png"
 import { useDispatch, useSelector } from 'react-redux'
@@ -27,13 +26,11 @@ const dispatch = useDispatch()
       {
       dropdown.map((item) => {
       const {id, title, link} = item
-      {
       return <div
        onClick={() => dispatch(hideSmallNavbar())}
        className='dropdown_item' 
        key={id}>
         <Link to={link} className='link'>{title} </Link></div>
-      }
       })
       }
       </div>

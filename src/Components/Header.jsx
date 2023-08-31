@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Style/scss/Header.css"
+import "../Style/scss/Header.scss"
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import bg from "../Images/headerBack.jpg"
 const Header = ({title}) => {

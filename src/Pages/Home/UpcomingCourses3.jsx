@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "../../Style/scss/Home/UpcomingCourses.css"
+import "../../Style/scss/Home/UpcomingCourses.scss"
 import { useSelector } from 'react-redux';
 import { FiUser, FiClock,FiBook } from "react-icons/fi";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";

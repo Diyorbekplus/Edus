@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../Style/scss/Shop/Shop.css"
+import "../../Style/scss/Shop/Shop.scss"
 import { shopProducts } from '../../Components/data'
 import Header from '../../Components/Header'
 import Footer from '../../Components/Footer'

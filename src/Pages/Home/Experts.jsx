@@ -1,11 +1,10 @@
-import React from 'react'
 import expert from "../../Images/expert.jpg"
 import videoBack from "../../Images/videoBack.jpg"
 
 import { TbDeviceAnalytics } from "react-icons/tb";
 import { MdStickyNote2 } from "react-icons/md";
 
-import "../../Style/scss/Home/Experts.css"
+import "../../Style/scss/Home/Experts.scss"
 const Experts = () => {
   return (
     <div className='experts'>

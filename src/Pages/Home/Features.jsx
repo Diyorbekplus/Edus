@@ -1,5 +1,4 @@
-import React from 'react'
-import "../../Style/scss/Home/Features.css"
+import "../../Style/scss/Home/Features.scss"
 const Features = () => {
   return (
     <div className='features'>

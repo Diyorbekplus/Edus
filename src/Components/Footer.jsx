@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Style/scss/Footer.css"
+import "../Style/scss/Footer.scss"
 import logo from "../Images/logo.png"
 import { AiOutlineTwitter, AiOutlineInstagram } from "react-icons/ai";
 import { FaFacebookF,FaLinkedinIn, FaTelegramPlane } from "react-icons/fa";

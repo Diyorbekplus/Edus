@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import logo from "../Images/logo.png"
-import "../Style/scss/Navbar.css"
+import "../Style/scss/Navbar.scss"
 import { MdOutlineSearch, MdOutlineShoppingCart } from "react-icons/md";
 import { HiBars3} from "react-icons/hi2";
 import { showSmallNavbar} from '../EduSlice/EduSlice';

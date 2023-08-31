@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../Style/scss/Pages/Video.css"
+import "../../../Style/scss/Pages/Video.scss"
 import { FaPlay } from "react-icons/fa";
 const Video = () => {
   return (

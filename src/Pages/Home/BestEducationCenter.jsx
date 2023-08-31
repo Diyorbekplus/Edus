@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsArrowRight } from "react-icons/bs";
-import "../../Style/scss/Home/Education.css";
+import "../../Style/scss/Home/Education.scss";
 
 const BestEducationCenter = () => {
   return (

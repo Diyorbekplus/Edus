@@ -1,5 +1,4 @@
-import React from 'react'
-import "../../Style/scss/Courses/Courses.css"
+import "../../Style/scss/Courses/Courses.scss"
 import { courses } from '../../Components/data'
 import { AiFillStar } from "react-icons/ai";
 import Header from "../../Components/Header"

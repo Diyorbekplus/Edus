@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import "../../Style/css/Testimonial.css"
+import { useState } from "react";
+import "../../Style/css/Testimonial.scss"
 import { useSelector } from 'react-redux';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const SmallTestimonials = () => {

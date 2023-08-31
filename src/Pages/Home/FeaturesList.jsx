@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../Style/scss/Home/FeaturesList.css"
+import "../../Style/scss/Home/FeaturesList.scss"
 import { features } from '../../Components/data'
 import { BsArrowRight } from "react-icons/bs";
 const FeaturesList = () => {

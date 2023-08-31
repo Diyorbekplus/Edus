@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../Style/scss/Pages/Advantages.css"
+import "../../../Style/scss/Pages/Advantages.scss"
 import { advantages } from '../../../Components/data'
 
 const Advantages = () => {

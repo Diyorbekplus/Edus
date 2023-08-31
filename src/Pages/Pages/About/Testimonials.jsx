@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { AiFillStar } from "react-icons/ai";
-import "../../../Style/scss/Pages/Testimonials.css"
+import "../../../Style/scss/Pages/Testimonials.scss"
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { testimonials } from '../../../Components/data';
 const Testimonials = () => {
